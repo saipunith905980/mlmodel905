@@ -4,10 +4,10 @@ import pickle
 app = Flask(__name__)
 
 # Load the pickled SVM model
-with open('pm_model.pkl', 'rb') as model_file:
+with open('pm_model-1.pkl', 'rb') as model_file:
     svm_model = pickle.load(model_file)
     
-with open('vector.pickle', 'rb') as f:
+with open('vector-1.pickle', 'rb') as f:
     # Load the pickle object
     vectorizer = pickle.load(f)
 
